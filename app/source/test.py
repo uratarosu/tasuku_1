@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
-driver = webdriver.Remote(
+driver = webdriver.Remote(                 
     command_executor=os.environ["SELENIUM_URL"],
     desired_capabilities=DesiredCapabilities.FIREFOX.copy()
 )
